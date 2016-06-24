@@ -1,0 +1,18 @@
+#include <stdio.h>
+main(){
+int a,sym=0,symm=0;
+for(;;){
+	printf("vuvedete a  ");
+	scanf("%d",&a);
+	sym=sym+a;
+	if(a<0){
+		symm=symm+a;
+		}
+	if(sym==-888){
+		break;
+	}
+	
+}
+	printf("symata na vsi4ki otricatelni 4isla e  %d",symm);
+	return 0;
+	}

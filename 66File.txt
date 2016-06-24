@@ -1,0 +1,60 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+
+int main()
+{
+	float a, b, c;
+	float x1, x2;
+	float d;
+
+	printf("\n Kvadratno uravnenie");
+	printf("\n Vuvedete stoinost na a = ");
+	scanf_s("%f", &a);
+	printf("\n Vuvedete stoinost na b = ");
+	scanf_s("%f", &b);
+	printf("\n Vuvedete stoinost na c = ");
+	scanf_s("%f", &c);
+
+	if (a == 0)
+	{
+		if (b == 0)
+		{
+			if (c == 0)
+			{
+				printf("\n Vsqko x e koren na uravnenieto");
+			}
+			else
+			{
+				printf("\n Uravnenieto ne moje da se reshi!");
+			}
+		}
+		else
+		{
+			x1 = x2 = -(c / b);
+			printf("X1=X2=%f\n", x1);
+		}
+	}
+	else
+	{
+		d = (b * b) - (4 * a * c);
+
+		if (d > 0)
+		{
+			x1 = (-b + sqrt(d)) / (2.0 * a);
+			x2 = (-b - sqrt(d)) / (2.0 * a);
+			printf("X1=%f\nX2=%f\n", x1, x2);
+		}
+		else if (d == 0)
+		{
+			x1 = x2 = (-b) / (2 * a);
+			printf("X1=X2=%f\n", x1);
+		}
+		else
+		{
+			printf("Nqma Realen Koren.");
+		}
+	}
+	return 0;
+}

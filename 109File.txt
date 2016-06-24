@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{int br,a,s,i;
+float sr;
+printf("broq na 4islata e: ");
+scanf("%d",&br);
+for (i=0,s=0;i<br;i++)
+{printf("vuvedete 4islo: ");
+scanf("%d",&a);
+s=s+a;}
+sr=(float)s/br;
+printf("srednoto aritmeti4no= %f",sr);
+return 0;}

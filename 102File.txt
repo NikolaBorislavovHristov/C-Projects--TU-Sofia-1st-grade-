@@ -1,0 +1,22 @@
+#include <stdio.h>
+main()
+{
+//br++ nad ili pod if-a//
+int a,sym=0,br=0;
+float sr;
+for (;;)
+       {
+	printf("vuvedete 4islo");
+    scanf("%d",&a);
+	sym=sym+a;
+	if(a==0)
+	{
+		break;
+		continue;
+		}
+	br++;
+}
+sr=(float)sym/br;
+printf("srednoto aritmeti4no na 4islata e %f",sr);
+return 0;
+}

@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+#define _CRT_SECURE_CPP_OVERLOAD_NAMES
+#define _CRT_SECURE_NO_WARNINGS
+int main()
+{
+	
+	float x,a,b,c,m1,m2,y,beg,end,delta,t;
+	printf("Vyvedete stoinost za a=");
+	scanf("%f,", &a);
+	printf("Vyvedete stoinost za b=");
+	scanf("%f,", &b);
+	printf("Vyvedete stoinost za c=");
+	scanf("%f,", &c);
+	printf("Vyvedete stoinost za m1=");
+	scanf("%f,", &m1);
+	printf("Vyvedete stoinost za m2=");
+	scanf("%f,\n\n", &m2);
+	printf("Vyvedete stoinost za beg=");
+	scanf("%f,", &x);
+	printf("Vyvedete stoinost za end=");
+	scanf("%f,", &end);
+	printf("Vyvedete stoinost za delta=");
+	scanf("%f,", &delta);
+	for (beg=x;x<end;x=x+delta)
+	{if(x<=m1)
+	{
+	y=b+x;
+	printf("y=%f x=%f\n", y,x);
+	}
+	else
+		{
+	if(x<=m2)
+			{
+	if(x!=4)
+	{
+	y=(a*x)/(4-x);
+	printf("y=%f x=%f\n", y,x);
+	}
+	else
+	{
+	printf("ne moje da se izvyr6i\n");
+	printf("y=%f x=%f\n", y,x);
+	}
+			}
+	else
+	{
+			y=c+x;
+			printf("y=%f x=%f\n", y,x);
+	}
+		}
+
+	
+	
+	}
+	if(x<=4.1&&x>=3.9)
+	{printf("n.r.");}
+	getch();
+	return 0;
+}

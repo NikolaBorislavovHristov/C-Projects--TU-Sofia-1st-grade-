@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(void)
+{
+	//pri predvaritelno zadadaen interval (-20;-4)
+     int a,w=1,sym=0,br=0,f;
+float sr;
+printf("broqt na 4islata e: ");
+scanf("%d",&f);
+     for (;w<=f;w++){     
+	 printf("Vuvedete 4islo %d a: ",w);
+           scanf("%d",&a);
+           if(a<-4){
+			   if(a>-20)
+		   {sym=sym+a;
+			   br++;}
+		   }}
+sr=(float)sym/br++;
+printf("srednoto aritmeti4no e: %f" ,sr);
+return 0;
+}

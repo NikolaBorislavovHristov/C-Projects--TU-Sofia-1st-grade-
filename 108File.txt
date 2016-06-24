@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+int i,s,br,a;
+
+float sr;
+for (i=0,br=0,s=0;i<10;i++)
+{
+    printf("vuvedete 4islo:");
+    scanf("%d",&a);
+    if (a>0)
+    {s=s+a;
+    br++;}
+
+}
+if (br>0)
+{
+    sr=(float)s/br;
+printf("srednoto aritmeti4no= %f",sr);
+}
+else {
+    printf("nqma polojitelni 4isla");}
+}

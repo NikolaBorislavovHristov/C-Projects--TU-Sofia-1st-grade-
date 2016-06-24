@@ -1,0 +1,16 @@
+ #include<stdio.h>
+
+int main()
+{
+int max=0, d;
+scanf("%d", &d);
+while(d>=0)
+{
+if(d>max)
+max = d;
+scanf("%d", &d);
+}
+printf("%d", max);
+
+return 0;
+}

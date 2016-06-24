@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+int main(void)
+
+{
+     float sr;
+     int a,sym=0,br=0;
+     int h;
+     for(;h!='y';)
+     {
+           printf("Vuvedete 4islo: ");
+           scanf("%d",&a);
+           sym=sym+a;
+           br++;
+           printf("tova li e vsi4ko: y/n");
+           h=getche();
+		  
+          
+     }
+	
+       
+        
+sr=(float)sym/br;
+printf("srednoto aritmeti4no e: %f" ,sr);
+return 0;}
